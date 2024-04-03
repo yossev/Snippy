@@ -1,0 +1,35 @@
+
+
+.main-class{
+    display: flex;
+    flex-direction: column; /* This makes the flexbox a column instead of a row*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(204, 204, 204) !important;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: black;
+    text-decoration: underline;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+a:hover{
+    color: blueviolet;
+}
+.shortened-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
