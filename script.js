@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('button').click(function(){
+  $('.btn').click(function(){
       let longUrl = $('input').val(); // Getting the value has to be called to actually get the value
       shortenUrl(longUrl); // call the shorten url method on the LongUrl
   });
