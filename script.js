@@ -5,6 +5,8 @@ $(document).ready(function() {
   });
 });
 
+$('.alert').hide(); // Originally Hidden 
+$('.alert alert-danger').hide();
 function shortenUrl(longUrl) {
   const data = {
       url: longUrl,
@@ -17,14 +19,15 @@ function shortenUrl(longUrl) {
   })
   .then(function (response) {
       const shortUrl = response.data.short_url;
-      $('.shortened-container p').html("✅ Here's Your Short Link! <a href='" + shortUrl + "'>" + shortUrl + "</a> <button class='button' data-clipboard-text='" + shortUrl + "' onclick='showAlert()'><b>Copy</b></button>");
+      $('.shortened-container p').html("✅ Here's Your Short Link! <a href='" + shortUrl + "'>" + shortUrl + "</a> <button class='button' data-clipboard-text='" + shortUrl + "'><b>Copy</b></button>");
       new ClipboardJS('.shortened-container button');
+      $('.button').click(function(){
+        $('.alert').show(); 
+      }) 
   })
   .catch(function (error) {
       console.error(error);
+      
   });
 }
 
-function showAlert() {
-  $('.alert').show();
-}
