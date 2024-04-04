@@ -4,7 +4,7 @@ Snippy is a straightforward website designed for URL shortening using the Spoo A
 
 ## How to Use
 
-1. Visit the Snippy website [here](https://snippy-url-shortener.com).
+1. Visit the Snippy website [here]([https://snippy-url-shortener.com](https://yossev.github.io/Snippy/)).
 2. Enter the URL you want to shorten in the provided input field.
 3. Click the "Shorten" button.
 4. The shortened URL will be displayed below the input field.
