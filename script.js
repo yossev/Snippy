@@ -21,10 +21,10 @@ function shortenUrl(longUrl) {
       const shortUrl = response.data.short_url;
       $('.shortened-container p').html("✅ Here's Your Short Link! <a href='" + shortUrl + "'>" + shortUrl + "</a> <button class='button' data-clipboard-text='" + shortUrl + "'><b>Copy</b></button>");
       new ClipboardJS('.shortened-container button');
-      $('.button').click(function(){
-        $('.alert').show(); 
-      }) 
   })
+  $('.button').click(function(){
+    $('.alert').show(); 
+  }) 
   .catch(function (error) {
       console.error(error);
       
